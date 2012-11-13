@@ -7,7 +7,7 @@ import zxcvbn
 # Settings
 PASSWORD_MIN_LENGTH = getattr(settings, "PASSWORD_MIN_LENGTH", 8)   # This is a sensible minimum
 PASSWORD_MAX_LENGTH = getattr(settings, "PASSWORD_MAX_LENGTH", 128) # Django auth user model is max_length 128
-PASSWORD_MIN_SCORE = getattr(settings, "ZXCVBN_MIN_SCORE", 2)
+PASSWORD_MIN_ENTROPY = getattr(settings, "ZXCVBN_MIN_ENTROPY", 25)
 
 class LengthValidator(object):
     message = _("Password must be between %s and %s chars" % (PASSWORD_MIN_LENGTH, PASSWORD_MAX_LENGTH))
@@ -33,7 +33,7 @@ class ZXCVBNValidator(object):
 
     def __call__(self,value):
         res = zxcvbn.password_strength(value)
-        if res.get('score') < PASSWORD_MIN_SCORE:
+        if res.get('entropy') < PASSWORD_MIN_ENTROPY:
             raise ValidationError(
                 self.message % _("Password is too weak"),
                 code=self.code)

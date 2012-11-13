@@ -53,8 +53,7 @@ Optional:
 
     Specifies a list of common sequences to attempt to match a password against::
 
-        PASSWORD_MIN_SCORE = 2 # 0, 1, 2, 3 or 4 if crack time is less than
-                               # 10**2, 10**4, 10**6, 10**8, Infinity (seconds).
+        PASSWORD_MIN_ENTROPY = 25 # defaults to a pragmatic 25
 
 
 Usage
