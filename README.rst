@@ -118,7 +118,9 @@ For full usage instructions see: https://github.com/lowe/zxcvbn
 Acknowledgments
 ---------------
 
-Ryan Pearl, who created the excellent python implementation of zxcvbn, https://github.com/rpearl/python-zxcvbn
+My work in bringing this to life was minimal, thanks to all these awesome people:
+
+Ryan Pearl, creator the excellent python implementation of zxcvbn, https://github.com/rpearl/python-zxcvbn
 
 Donald Stufft, who's django-passwords app was the starting point for this project:
 https://github.com/dstufft/django-passwords/
