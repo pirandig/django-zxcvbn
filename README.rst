@@ -10,7 +10,7 @@ It's a realistic password strength estimator.
 
 https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/
 
-So many websites either permit crappy passwords, or impose crappy rules that almost enforce crappy passwords. This library hopes to change that.
+So many websites either permit crappy passwords, or impose rules that enforce crappy passwords. This library is to promote a better way.
 
 
 Installation
@@ -72,8 +72,8 @@ Javascript
 
 For convenience the zxcvbn javascript is included in this package (using contrib.static)
 
-<script type="text/javascript" src="zxcvbn-async.js">
-</script>
+    <script type="text/javascript" src="zxcvbn-async.js">
+    </script>
 
 zxcvbn-async in turn loads the full zxcvbn library from dropbox.
 
@@ -118,6 +118,8 @@ For full usage instructions see: https://github.com/lowe/zxcvbn
 Acknowledgments
 ---------------
 
+Ryan Pearl, who created the excellent python implementation of zxcvbn, https://github.com/rpearl/python-zxcvbn
+
 Donald Stufft, who's django-passwords app was the starting point for this project:
 https://github.com/dstufft/django-passwords/
 
@@ -140,13 +142,14 @@ Last but not least, big thanks to xkcd :)
 https://xkcd.com/936/
 
 
+Redistribution
+--------------
 
-License
--------
+zxcvbn lives at https://github.com/lowe/zxcvbn
 
-This (django-zxcvbn) is made available under the BSD license
+The zxcvbn js library is redistributed under the terms of this license:
 
-Copyright (c) 2012 Piran digital Pty Ltd
+Copyright (c) 2012 Dropbox, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -168,14 +171,12 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-Redistribution
---------------
+BSD License
+-----------
 
-zxcvbn lives at https://github.com/lowe/zxcvbn
+django-zxcvbn is made available under the BSD license
 
-The zxcvbn js library is redistributed under the terms of this license:
-
-Copyright (c) 2012 Dropbox, Inc.
+Copyright (c) 2012 Piran Digital Pty Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
