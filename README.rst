@@ -63,7 +63,7 @@ Usage
     Use in your signup form like this:
 
         from django import forms
-        from passwords.fields import PasswordField
+        from django_zxcvbn.fields import PasswordField
 
         class ExampleForm(forms.Form):
             password = PasswordField(label="Password")

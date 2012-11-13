@@ -1,6 +1,6 @@
 from django.forms import CharField, PasswordInput
 
-from passwords.validators import length_validator, zxcvbn_validator
+from django_zxcvbn.validators import length_validator, zxcvbn_validator
 
 class PasswordField(CharField):
     default_validators = [length_validator, zxcvbn_validator ]

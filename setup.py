@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "django-zxcvbn",
-    version = __import__("passwords").__version__,
+    version = __import__("django_zxcvbn").__version__,
     author = "Rich Atkinson",
     author_email = "rich@piran.com.au",
     description = "Django app providing zxcvbn password validation (see http://tech.dropbox.com/?p=165)",
