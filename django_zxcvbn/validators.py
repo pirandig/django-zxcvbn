@@ -29,14 +29,13 @@ class LengthValidator(object):
 
 
 class ZXCVBNValidator(object):
-    message = _("Passwords must be at least %s characters and of sufficient complexity")
     code = "zxcvbn"
 
     def __call__(self,value):
         res = zxcvbn.password_strength(value)
         if res.get('entropy') < PASSWORD_MIN_ENTROPY:
             raise ValidationError(
-                self.message % _("Password is too weak"),
+                _("Password is too weak"),
                 code=self.code)
 
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-29 15:56+0300\n"
+"POT-Creation-Date: 2016-03-30 13:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,18 +22,13 @@ msgstr ""
 #: validators.py:23
 #, python-format
 msgid "Must be %s characters or more"
-msgstr "Должно содержать минимум %s символов"
+msgstr "Должен содержать минимум %s символов"
 
 #: validators.py:27
 #, python-format
 msgid "Must be %s characters or less"
-msgstr "Должно содержать не более %s символов"
+msgstr "Должен содержать не более %s символов"
 
-#: validators.py:32
-#, python-format
-msgid "Passwords must be at least %s characters and of sufficient complexity"
-msgstr "Пароль должен содержать минимум %s символов достаточной сложности"
-
-#: validators.py:39
+#: validators.py:38
 msgid "Password is too weak"
 msgstr "Пароль слишком слаб"
