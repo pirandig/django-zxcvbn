@@ -1,5 +1,5 @@
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _, ungettext_lazy
 from django.conf import settings
 
 import zxcvbn
@@ -20,12 +20,20 @@ class LengthValidator(object):
     def __call__(self, value):
         if self.min_length and len(value) < self.min_length:
             raise ValidationError(
-                message=_("Must be %s characters or more") % self.min_length,
-                code=self.code)
+                message=ungettext_lazy(
+                    "Must be %s character or more",
+                    "Must be %s characters or more"
+                ) % self.min_length,
+                code=self.code
+            )
         elif self.max_length and len(value) > self.max_length:
             raise ValidationError(
-                message=_("Must be %s characters or less") % self.max_length,
-                code=self.code)
+                message=ungettext_lazy(
+                    "Must be %s character or less",
+                    "Must be %s characters or less"
+                ) % self.max_length,
+                code=self.code
+            )
 
 
 class ZXCVBNValidator(object):

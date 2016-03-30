@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-30 13:17+0300\n"
+"POT-Creation-Date: 2016-03-30 15:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,16 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: validators.py:23
-#, python-format
-msgid "Must be %s characters or more"
-msgstr "Должен содержать минимум %s символов"
+#: validators.py:24
+#| msgid "Must be %s characters or more"
+msgid "Must be %s character or more"
+msgid_plural "Must be %s characters or more"
+msgstr[0] "Должен содержать минимум %s символ"
+msgstr[1] "Должен содержать минимум %s символа"
+msgstr[2] "Должен содержать минимум %s символов"
 
-#: validators.py:27
-#, python-format
-msgid "Must be %s characters or less"
-msgstr "Должен содержать не более %s символов"
+#: validators.py:32
+#| msgid "Must be %s characters or less"
+msgid "Must be %s character or less"
+msgid_plural "Must be %s characters or less"
+msgstr[0] "Должен содержать не более %s символа"
+msgstr[1] "Должен содержать не более %s символов"
+msgstr[2] "Должен содержать не более %s символов"
 
-#: validators.py:38
+#: validators.py:46
 msgid "Password is too weak"
 msgstr "Пароль слишком слаб"
